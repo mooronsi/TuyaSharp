@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuyaSharp", "src\TuyaSharp\TuyaSharp.csproj", "{ED04809B-7640-41C5-BB00-E38705920116}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configs", "Configs", "{C983867A-2079-407A-88E1-33D4C6998321}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{DEEE1B79-2FC6-4FB1-AD87-92B3BE3BD874}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{8ED8D5E2-B2CD-4A54-877D-81A557A72614}"
+	ProjectSection(SolutionItems) = preProject
+		tools\nuget\PackAndPushNuget.bat = tools\nuget\PackAndPushNuget.bat
+		tools\nuget\PackAndPushNuget.ps1 = tools\nuget\PackAndPushNuget.ps1
+		tools\nuget\PackAndPushNuget.sh = tools\nuget\PackAndPushNuget.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versioning", "Versioning", "{7CF0D143-C10F-447D-9C7B-EED01917D2DB}"
+	ProjectSection(SolutionItems) = preProject
+		tools\versioning\UpdateVersion.bat = tools\versioning\UpdateVersion.bat
+		tools\versioning\UpdateVersion.sh = tools\versioning\UpdateVersion.sh
+		tools\versioning\UpdateVersion.ps1 = tools\versioning\UpdateVersion.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED04809B-7640-41C5-BB00-E38705920116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED04809B-7640-41C5-BB00-E38705920116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED04809B-7640-41C5-BB00-E38705920116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED04809B-7640-41C5-BB00-E38705920116}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8ED8D5E2-B2CD-4A54-877D-81A557A72614} = {DEEE1B79-2FC6-4FB1-AD87-92B3BE3BD874}
+		{7CF0D143-C10F-447D-9C7B-EED01917D2DB} = {DEEE1B79-2FC6-4FB1-AD87-92B3BE3BD874}
+	EndGlobalSection
+EndGlobal
