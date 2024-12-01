@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Version>1.0.0</Version>
+        <Authors>mooronsi</Authors>
+        <Description>Code generator for Tuya Api wrapper</Description>
+        <PackageId>TuyaSharp.CodeGeneration</PackageId>
+        <RepositoryUrl>https://github.com/mooronsi/TuyaSharp</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\TuyaSharp\TuyaSharp.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="Templates\InstructionsSetTemplates.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>InstructionsSetTemplate.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Update="Templates\InstructionsSetTemplates.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>InstructionsSetTemplates.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+</Project>
