@@ -50,7 +50,7 @@ public class DeviceControl(ITuyaSharpClient client) : IDeviceControl
             new Request<GetDeviceInstructionsRequest>
             {
                 HttpMethod = HttpMethod.Get,
-                Path = $"/v1.0/iot-03/devices/{request.DeviceId}/functions",
+                Path = $"/v1.0/devices/{request.DeviceId}/functions",
             }, cancellationToken: cancellationToken);
     }
 
